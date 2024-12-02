@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Webpage & Registration Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome for Social Media Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar">
+    <div class="navbar-container">
+        <!-- Logo or Brand Name -->
+        <a href="#" class="navbar-logo">Welcome to my Webpage</a>
+
+        <!-- Navbar Links -->
+        <ul class="navbar-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#audio">Music</a></li>
+            <li><a href="#video">Videos</a></li>
+            <li><a href="#form">Registration Form</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+    <section id="audio" class="audio-section">
+        <h2>Audio Content.</h2>
+
+        <h3>| Listen to my favourite song:</h3>
+        <audio controls>
+            <source src="assets/audio/audio1.mp3" type="audio/mpeg">
+        </audio>
+
+        <h3>| Listen to my friend's favourite song:</h3>
+        <audio controls>
+            <source src="assets/audio/audio2.mp3" type="audio/mpeg">
+        </audio>
+
+        <h3>| Listen to my friend's favourite song:</h3>
+        <audio controls>
+            <source src="assets/audio/audio2.mp3" type="audio/mpeg">
+        </audio>
+    </section>
+
+    <section id="video" class="video-section">
+        <h2>Video Content.</h2>
+        <h3>| Watch a Video.</h3>
+        <video controls poster="video-poster.jpg">
+            <source src="assets/video/video1.mp4" type="video/mp4">
+        </video>
+
+        <video controls poster="video-poster.jpg">
+            <source src="assets/video/video2.mp4" type="video/mp4">
+        </video>
+
+        <video controls poster="video-poster.jpg">
+            <source src="assets/video/video3.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section id="form" class="registration-form">
+        <h2>User Registration Form.</h2>
+        <form action="/submit" method="POST">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required maxlength="100"><br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8"><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="18" required><br><br>
+
+            <label>Gender:</label><br>
+
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Other</label><br>
+
+            <label for="terms">
+                <input type="checkbox" id="terms" name="terms" required> I agree to the Terms and Conditions
+            </label><br><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; Amos 2024 | All Rights Reserved</p>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="#" target="_blank" class="fab fa-twitter"></a>
+        <a href="#" target="_blank" class="fab fa-youtube"></a>
+        <a href="#" target="_blank" class="fab fa-github"></a>
+        <a href="#" target="_blank" class="fab fa-linkedin"></a>
+    </div>
+
+    </footer>
+
+</body>
+</html>
